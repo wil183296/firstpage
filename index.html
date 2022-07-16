@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo"> <span><</span>Portfolio<span>/></span></h1>
+        <ul class="nav-links">
+            <li><a href="#About" data-after="About"></a>About</li>
+            <li><a href="#section"></a>Skills</li>
+            <li><a href="#tecnologies"></a>Services</li>
+            <li><a href="#footer"></a>Contact</li>
+            <li class="ctn" ><a href="#"></a>Hire me</li>
+        </ul>
+        <img src="img/icons8-menú (1).svg" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Hello!</h1>
+            <h1>My name is</h1>
+            <h1><span>Wil</span></h1>
+            <a href="#" class="ctn">Let´s get start</a>
+        </div>
+    </header>
+    <!-- About -->
+    <div class="about" id="About">
+        <div class="container">
+            <div class="user">
+                <img id="profile" src="img/user.svg" alt="">
+            </div>
+            <div class="info">
+                <h1 id="h1">About <span>me</span></h1>
+                <h2 id="h2">Front-end <span>Developer</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <a href="#">More</a>
+            </div>
+        </div>
+    </div>
+    <!-- End about  -->
+
+
+    <!-- Skills -->
+    <section id="section">
+        <div class="head">
+            <h1>Skills <span>X,Y,Z</span></h1>
+        </div>
+        <div class="group">
+            <div class="all">
+                <div class="image">
+                    <img src="img/Html 5.svg" alt="">
+                </div>
+                <div class="box">
+                    <h2>Html <span>5</span></h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, quas?</p>
+                </div>
+            </div>
+            <div class="all">
+                <div class="image">
+                    <img src="img/Css 3.svg" alt="">
+                </div>
+                <div class="box">
+                    <h2>Css <span>3</span></h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, quas?</p>
+                </div>
+            </div>
+            <div class="all">
+                <div class="image">
+                    <img src="img/javascript.svg" alt="">
+                </div>
+                <div class="box">
+                    <h2>Java<span>Script</span></h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, quas?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skill -->
+
+    <!-- Services -->
+    <div class="services" id="Tecnologies">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="array">
+                <h2>Front-end</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <img src="img/fronted.jpg" alt="">
+                <a href="">Explore</a>
+            </div>
+            <div class="array">
+                <h2>Back-end</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <img src="img/backend.jpg" alt="">
+                <a href="">Explore</a>
+            </div>
+            <div class="array">
+                <h2>Responsive design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <img src="img/laptop.jpg" alt="">
+                <a href="">Explore</a>
+            </div>
+            <div class="array">
+                <h2>React</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <img src="img/react.jpg" alt="">
+                <a href="">Explore</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Footer -->
+    <footer id="Footer">
+        <div class="container">
+            <h1>Contact</h1>
+            <h2>Your Complete Web Solution</h2>
+            <div class="icons">
+                <img src="img/github.svg" alt="">
+                <img src="img/instagram.svg" alt="">
+                <img src="img/linkeding.svg" alt="">
+            </div>
+            <p>Copyright &copy; 2022</p>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
